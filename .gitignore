@@ -1,0 +1,34 @@
+# --- Arquivos temporários ---
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- Diretórios de build/cache ---
+result
+result-*
+.cache/
+.nix-gc/
+
+# --- Arquivos de lock gerados automaticamente ---
+# Você pode commitar flake.lock se quiser travar dependências.
+# Se NÃO quiser versionar:
+# flake.lock
+
+# --- Logs ---
+*.log
+
+# --- Arquivos de secrets locais (caso existam) ---
+secrets.nix
+secrets/
+*.key
+*.pem
+
+# --- Home Manager ---
+home-manager-generation
+.hm-build/
+
+# --- Editor/IDE ---
+.vscode/
+.idea/
+
