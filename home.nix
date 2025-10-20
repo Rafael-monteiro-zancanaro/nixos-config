@@ -1,0 +1,59 @@
+{ config, pkgs, ... }:
+
+{
+  home.username = "rafaelmz";
+  home.homeDirectory = "/home/rafaelmz";
+  home.stateVersion = "25.05";
+
+  home.packages = with pkgs; [
+    xclip
+    curl
+    htop
+    noto-fonts
+    noto-fonts-emoji
+    font-awesome
+    
+    nerd-fonts.fira-code
+    nerd-fonts.jetbrains-mono  
+    nerd-fonts.hack
+  ];
+  
+  gtk = {
+    enable = true;
+    font = {
+      name = "FiraCode Nerd Font 12";
+      package = pkgs.nerd-fonts.fira-code;
+    };
+  };
+
+  dconf.settings = {
+    "org/cinnamon/desktop/interface" = {
+      # Fonte normal para interface
+      font-name = "Noto Sans 10";
+      # Fonte MONO para terminal e código
+      monospace-font-name = "FiraCode Nerd Font Mono 11";
+    };
+  };
+
+  # Configuração alternativa mais robusta
+  home.sessionVariables = {
+    # Forçar fontes mono
+    TERMINAL_FONT = "FiraCode Nerd Font Mono";
+  };
+
+  # Configuração do Git
+  programs.git = {
+    enable = true;
+    userName = "rafael.zancanaro";
+    userEmail = "rafael.zancanaro@elotech.com.br";
+  };
+
+  programs.bash = {
+    enable = true;
+    shellAliases = {
+      vim = "lvim";
+      vi = "lvim";
+      nvim = "lvim";
+    };
+  };
+}
