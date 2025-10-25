@@ -20,6 +20,7 @@
     nerd-fonts.fira-code
     nerd-fonts.jetbrains-mono  
     nerd-fonts.hack
+    bat
   ];
   
   gtk = {
@@ -48,16 +49,11 @@
   # Configuração do Git
   programs.git = {
     enable = true;
-    userName = "rafael.zancanaro";
-    userEmail = "rafael.zancanaro@elotech.com.br";
+    userName = "Rafael-monteiro-zancanaro";
+    userEmail = "rafaelmonte46@gmail.com.br";
   };
 
   programs.bash = {
     enable = true;
-    shellAliases = {
-      vim = "lvim";
-      vi = "lvim";
-      nvim = "lvim";
-    };
   };
 }
