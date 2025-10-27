@@ -21,6 +21,7 @@
     nerd-fonts.jetbrains-mono  
     nerd-fonts.hack
     bat
+    tree
   ];
   
   gtk = {
