@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  home.packages.idea-community.addPlugins = with pkgs.jetbrains.plugins; [
-    ideavim
+  home.packages = with pkgs; [
+    (jetbrains.plugins.addPlugins jetbrains.idea-community [ "ideavim" ])
   ];
 }
