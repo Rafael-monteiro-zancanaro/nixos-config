@@ -14,7 +14,7 @@
 	    "vim.insertModeKeyBindings": [ { "before": ["j", "k"], "after": ["<Esc>"] } ],
 	    "vim.handleKeys": { "<C-d>": true, "<C-s>": false, "<C-z>": false, "<C-f>": false, "<C-p>": false }
 	}	
-      ''
+      '';
     };
   };
 }
