@@ -20,6 +20,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          # Quando quiser criar outros perfis ou capilarizar é só criar outro user com outras configurações
           home-manager.users.rafaelmz = import ./home.nix;
         }
       ];
