@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 {
+  imports = [
+    ./aliases.nix
+  ];
   programs.git = {
     enable = true;
     userName = "Rafael-monteiro-zancanaro";
