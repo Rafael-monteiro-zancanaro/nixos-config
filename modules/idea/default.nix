@@ -4,7 +4,7 @@
   imports = [
     ./plugins.nix
   ];
-  home.programs = with pkgs; [
+  home.packages = with pkgs; [
 		jetbrains.idea-community
   ];
 
