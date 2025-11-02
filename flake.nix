@@ -1,5 +1,5 @@
 {
-  description = "Configuração do NixOS para trabalho do Rafael";
+  description = "Configuração do NixOS";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
@@ -20,6 +20,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          # Quando quiser criar outros perfis ou capilarizar é só criar outro user com outras configurações
           home-manager.users.rafaelmz = import ./home.nix;
         }
       ];

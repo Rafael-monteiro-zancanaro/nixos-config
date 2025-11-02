@@ -47,13 +47,6 @@
     TERMINAL_FONT = "FiraCode Nerd Font Mono";
   };
 
-  # Configuração do Git
-  programs.git = {
-    enable = true;
-    userName = "Rafael-monteiro-zancanaro";
-    userEmail = "rafaelmonte46@gmail.com.br";
-  };
-
   programs.bash = {
     enable = true;
   };
