@@ -4,7 +4,7 @@
     default = {
       extensions = with pkgs.vscode-extensions; [
         vscodevim.vim
-        jnoortheen.nix-ide
+ #       jnoortheen.nix-ide
       ];
       userSettings = {
         "vim.normalModeKeyBindings" = ''
