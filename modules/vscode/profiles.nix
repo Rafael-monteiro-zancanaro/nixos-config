@@ -14,7 +14,7 @@
  #       [ { "before": ["j", "k"], "after": ["<Esc>"] } ]
  #       '';
         "workbench.sideBar.location" = "right";
-        "vim.useSystemClipboard" = "true";
+ #       "vim.useSystemClipboard" = "true";
  #       "vim.handleKeys" = ''
  #       { "<C-d>": true, "<C-s>": false, "<C-z>": false, "<C-f>": false, "<C-p>": false }
  #       '';
