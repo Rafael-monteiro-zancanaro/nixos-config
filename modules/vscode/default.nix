@@ -3,7 +3,7 @@
   imports = [
     ./profiles.nix
   ];
-  packages = with pkgs; [
+  home.packages = with pkgs; [
     vscode
   ];
 
