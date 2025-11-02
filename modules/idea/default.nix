@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./plugins.nix
-  ];
+  # imports = [
+  #   ./plugins.nix
+  # ];
   home.packages = with pkgs; [
-		jetbrains.idea-community
+    (jetbrains.plugins.addPlugins jetbrains.idea-community [ "ideavim" ])
   ];
 }
