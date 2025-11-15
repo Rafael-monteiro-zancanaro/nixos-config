@@ -46,12 +46,31 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-
+  services.xserver = {
+	  enable = true;
+	  # Enable the GNOME Desktop Environment.
+	  # services.xserver.displayManager.gdm.enable = true;
+	  # services.xserver.desktopManager.gnome.enable = true;
+	  displayManager = {
+	    lightdm.enable = true;  # Gerenciador de login leve
+	    defaultSession = "none+i3";
+	  };
+	    
+	  desktopManager = {
+	    xterm.enable = false;
+	  };
+	    
+	  windowManager = {
+	    i3 = {
+	      enable = true;
+	      extraPackages = with pkgs; [
+		dmenu  # Lançador de aplicativos
+		i3status  # Barra de status
+		i3lock  # Bloqueador de tela
+	      ];
+	    };
+	  };
+  };
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "br";
@@ -87,7 +106,7 @@
   users.users.rafaelmz = {
     isNormalUser = true;
     description = "Rafael Monteiro Zancanaro";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -106,6 +125,15 @@
     wget
     curl
     git
+    # Utilitários básicos
+    feh  # Para wallpapers
+    arandr  # Gerenciador de monitores
+    picom  # Compositor (para transparências e efeitos)
+    rofi  # Alternativa ao dmenu
+    polybar  # Barra de status alternativa
+    nitrogen  # Gerenciador de wallpapers
+    thunar  # Gerenciador de arquivos
+    alacritty  # Terminal
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
