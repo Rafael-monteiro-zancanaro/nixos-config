@@ -20,6 +20,9 @@
         # Kill focused window
         "${modifier}+Shift+q" = "kill";
         
+        # Run file manager
+        "${modifier}+Shift+f" = "exec alacritty -e ranger";
+        
         # Window focus
         "${modifier}+h" = "focus left";
         "${modifier}+j" = "focus down";

@@ -132,7 +132,14 @@
     rofi  # Alternativa ao dmenu
     polybar  # Barra de status alternativa
     nitrogen  # Gerenciador de wallpapers
-    thunar  # Gerenciador de arquivos
+    # File management
+    ranger
+    pcmanfm  # Keep as backup for GUI tasks
+    # Ranger dependencies for better experience
+    w3m  # For image previews
+    highlight  # For syntax highlighting
+    poppler_utils  # pdf preview (pdftotext)
+    mediainfo  # Media file info
     alacritty  # Terminal
   ];
 

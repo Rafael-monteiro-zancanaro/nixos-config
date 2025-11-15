@@ -2,64 +2,42 @@
 
 {
   home.packages = with pkgs; [
-    # i3 essentials
-    dmenu
-    i3status
-    i3lock
+    # ... other packages ...
     
-    # Utilities
-    feh
-    nitrogen
-    picom
-    rofi
-    arandr
+    # File management
+    ranger
+    pcmanfm  # GUI fallback
     
-    # System tray apps
-    networkmanagerapplet
-    blueman
+    # Ranger enhancements
+    w3m
+    highlight
+    poppler_utils
+    mediainfo
+    ffmpegthumbnailer  # Video thumbnails
+    unzip  # Archive preview
+    atool  # Archive handling
   ];
-  
-  # Services
-  services = {
-    picom = {
-      enable = true;
-      fade = true;
-      inactiveOpacity = 0.9;
-      shadow = true;
-      fadeDelta = 5;
-    };
-  };
-  
-  # Terminal configuration
-  programs.alacritty = {
+
+  # Ranger configuration
+  programs.ranger = {
     enable = true;
+    
+    # Optional: configure ranger
     settings = {
-      window = {
-        opacity = 0.9;
-        decorations = "full";
-        padding = { x = 5; y = 5; };
-      };
-      font = {
-        size = 11;
-        normal = {
-          family = "Fira Code";
-          style = "Regular";
-        };
-        bold = {
-          family = "Fira Code";
-          style = "Bold";
-        };
-        italic = {
-          family = "Fira Code";
-          style = "Italic";
-        };
-      };
-      colors = {
-        primary = {
-          background = "#1e1e2e";
-          foreground = "#cdd6f4";
-        };
-      };
+      preview_images = true;
+      show_hidden = true;
     };
+    
+    # Keybindings customization
+    keybindings = {
+      "gh" = "cd ~";
+      "gr" = "cd /";
+    };
+    
+    # Plugins
+    plugins = [
+      # You can add ranger plugins here
+      # "rc.conf"  # Example plugin file
+    ];
   };
 }
