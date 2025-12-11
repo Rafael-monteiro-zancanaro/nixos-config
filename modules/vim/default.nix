@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  home.file.".vimrc".source = ../../dotfiles/vimrc;
+  home.file.".vimrc".source = ../../dotfiles/vim/vimrc;
+
 }
