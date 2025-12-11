@@ -1,7 +1,7 @@
 { config, ... }:
 
 {
-  programs.git.aliases = {
+  programs.git.settings.aliases = {
     cm = "commit";
     sw = "switch";
     s = "status -s";
