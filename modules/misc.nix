@@ -1,7 +1,7 @@
 { pkgs, ... }: {
 
 	imports = [
-		./modules/vim/default.nix
+		./vim/default.nix
 	];
 	
 	home.packages = with pkgs; [
