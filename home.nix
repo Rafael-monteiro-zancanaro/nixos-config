@@ -14,7 +14,7 @@
     curl
     htop
     noto-fonts
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     font-awesome
     cmatrix   
     nerd-fonts.fira-code
