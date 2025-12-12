@@ -25,7 +25,6 @@
     zsh
   ];
 
-  
   gtk = {
     enable = true;
     font = {
@@ -35,6 +34,7 @@
   };
 
   home.file.".config/nixpkgs/config.nix".source = ./dotfiles/nix-shell/config.nix;
+  home.file.".zshrc".source = ./dotfiles/zsh/zshrc;
 
 
   dconf.settings = {
