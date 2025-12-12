@@ -4,7 +4,6 @@
   home.username = "rafaelmz";
   home.homeDirectory = "/home/rafaelmz";
   home.stateVersion = "25.05";
-  nixpkgs.config.allowUnfree = true;
   imports = [
 	./modules/misc.nix
 	./modules/dev.nix
