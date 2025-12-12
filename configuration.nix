@@ -100,8 +100,10 @@
   programs.zsh = {
     enable = true;
     histSize = 10000;
+    enableSyntaxHighlighting = true;
+    enableAutosuggestions = true;
     ohMyZsh = {
-        theme = "powerlevel10k/powerlevel10k";
+        theme = "agnoster";
         plugins = [ "git" "zsh-autosuggestions" "zsh-syntax-highlighting" "colorize" ];
     };
   };
