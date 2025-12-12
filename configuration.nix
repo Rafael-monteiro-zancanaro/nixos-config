@@ -48,8 +48,6 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable ZSH
-  programs.zsh.enable = true;
 
   # Enable the GNOME Desktop Environment.
   services.displayManager.gdm.enable = true;
@@ -93,10 +91,20 @@
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
+      oh-my-zsh
     #  thunderbird
     ];
   };
 
+  #zsh Settings
+  programs.zsh = {
+    enable = true;
+    history.size = 10000;
+    ohMyZsh = {
+        theme = "powerlevel10k/powerlevel10k";
+        plugins = [ "git" "zsh-autosuggestions" "zsh-syntax-highlighting" "colorize" ]
+    };
+  };
   
   # Install firefox.
   programs.firefox.enable = true;
