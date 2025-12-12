@@ -99,7 +99,7 @@
   #zsh Settings
   programs.zsh = {
     enable = true;
-    history.size = 10000;
+    histSize = 10000;
     ohMyZsh = {
         theme = "powerlevel10k/powerlevel10k";
         plugins = [ "git" "zsh-autosuggestions" "zsh-syntax-highlighting" "colorize" ];
