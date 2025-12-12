@@ -105,7 +105,7 @@
     ohMyZsh = {
         enable = true;
         theme = "agnoster";
-        plugins = [ "git" "zsh-autosuggestions" "zsh-syntax-highlighting" "colorize" ];
+        plugins = [ "git" "colorize" ];
     };
   };
   
