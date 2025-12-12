@@ -52,8 +52,4 @@
     TERMINAL_FONT = "FiraCode Nerd Font Mono";
     SHELL = "${pkgs.zsh}/bin/zsh";
   };
-
-  programs.bash = {
-    enable = true;
-  };
 }
