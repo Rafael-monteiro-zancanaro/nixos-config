@@ -7,6 +7,7 @@
   imports = [
 	./modules/misc.nix
 	./modules/dev.nix
+  ./modules/core.nix
   ];
 
   home.packages = with pkgs; [
