@@ -25,7 +25,6 @@
     zsh
   ];
 
-  programs.zsh.enable = true;
   
   gtk = {
     enable = true;
