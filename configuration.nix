@@ -88,6 +88,7 @@
     isNormalUser = true;
     description = "Rafael Monteiro Zancanaro";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.zsh;
     packages = with pkgs; [
     #  thunderbird
     ];

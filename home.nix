@@ -26,7 +26,6 @@
   ];
 
   programs.zsh.enable = true;
-  users.users.rafaelmz.shell = pkgs.zsh;
   
   gtk = {
     enable = true;
