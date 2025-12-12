@@ -32,6 +32,8 @@
     };
   };
 
+  home.file.".config/nixpkgs/config.nix".source = ./dotfiles/nix-shell/config.nix;
+
   dconf.settings = {
     "org/cinnamon/desktop/interface" = {
       # Fonte normal para interface
