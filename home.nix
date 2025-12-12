@@ -22,7 +22,11 @@
     nerd-fonts.hack
     bat
     tree
+    zsh
   ];
+
+  programs.zsh.enable = true;
+  users.users.rafaelmz.shell = pkgs.zsh;
   
   gtk = {
     enable = true;
@@ -33,6 +37,7 @@
   };
 
   home.file.".config/nixpkgs/config.nix".source = ./dotfiles/nix-shell/config.nix;
+
 
   dconf.settings = {
     "org/cinnamon/desktop/interface" = {
@@ -47,6 +52,7 @@
   home.sessionVariables = {
     # Forçar fontes mono
     TERMINAL_FONT = "FiraCode Nerd Font Mono";
+    SHELL = "${pkgs.zsh}/bin/zsh";
   };
 
   programs.bash = {
