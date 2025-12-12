@@ -102,7 +102,7 @@
     history.size = 10000;
     ohMyZsh = {
         theme = "powerlevel10k/powerlevel10k";
-        plugins = [ "git" "zsh-autosuggestions" "zsh-syntax-highlighting" "colorize" ]
+        plugins = [ "git" "zsh-autosuggestions" "zsh-syntax-highlighting" "colorize" ];
     };
   };
   
