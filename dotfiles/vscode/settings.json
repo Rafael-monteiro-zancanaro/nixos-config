@@ -1,0 +1,32 @@
+{
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-f>": false,
+    "<C-p>": false,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "after": [
+        "<Esc>"
+      ],
+      "before": [
+        "j",
+        "k"
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "after": [
+        ":"
+      ],
+      "before": [
+        "<Space>"
+      ]
+    }
+  ],
+  "vim.useSystemClipboard": true,
+  "workbench.sideBar.location": "right"
+}
