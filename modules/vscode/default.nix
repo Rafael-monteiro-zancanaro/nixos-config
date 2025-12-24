@@ -10,4 +10,6 @@
   programs.vscode = {
     enable = true;
   };
+
+  home.file.".config/Code/User/settings.json".source = ../../dotfiles/vscode/settings.json;
 }
