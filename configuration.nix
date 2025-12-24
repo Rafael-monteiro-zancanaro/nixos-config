@@ -122,6 +122,11 @@
     wget
     curl
     git
+    rustc
+    cargo
+    rustfmt
+    clippy
+    gcc
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
