@@ -122,18 +122,8 @@
     wget
     curl
     git
-    rustc
-    cargo
-    rustfmt
-    clippy
     gcc
-    pkg-config
-    openssl
   ];
-
-  environment.variables = {
-    PKG_CONFIG_PATH="${pkgs.openssl.dev}/lib/pkgconfig";
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
