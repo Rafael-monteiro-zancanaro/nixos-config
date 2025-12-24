@@ -9,7 +9,6 @@
     };
     rust = {
       extensions = with pkgs.vscode-extensions; [
-        # dustypomerleau.rust-syntax
         rust-lang.rust-analyzer
         vadimcn.vscode-lldb
       ];
