@@ -70,7 +70,9 @@
     isNormalUser = true;
     description = "Rafael Monteiro Zancanaro";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [
+      git
+    ];
   };
   
   # Allow unfree packages
