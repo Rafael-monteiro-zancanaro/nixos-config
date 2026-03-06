@@ -11,5 +11,6 @@
     cmatrix   
     bat
     tree
+    vscodium
   ];
 }
