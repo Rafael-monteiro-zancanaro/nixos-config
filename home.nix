@@ -1,18 +1,18 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    ./packages/misc.nix
-  ];
-
   home.username = "zancanaro";
   home.homeDirectory = "/home/zancanaro";
   home.stateVersion = "25.11";
 
+  imports = [
+    ./modules/misc.nix
+  ];
+
   home.packages = with pkgs; [
     curl
     htop
-    cmatrix   
+    cmatrix
     bat
     tree
     vscodium
