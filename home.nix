@@ -7,6 +7,7 @@
 
   imports = [
     ./modules/misc.nix
+    ./modules/social.nix
   ];
 
   home.packages = with pkgs; [
