@@ -4,5 +4,6 @@
     spotify
     todoist-electron
     obs-studio
+    krita
   ];
 }
