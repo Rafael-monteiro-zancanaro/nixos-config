@@ -5,5 +5,6 @@
     todoist-electron
     obs-studio
     krita
+    apostrophe
   ];
 }
