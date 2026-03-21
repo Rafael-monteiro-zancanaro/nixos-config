@@ -19,5 +19,6 @@
     tree
     vscodium
     nixfmt
+    gcc
   ];
 }
