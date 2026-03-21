@@ -8,6 +8,7 @@
   imports = [
     ./modules/misc.nix
     ./modules/social.nix
+    ./modules/ide.nix
   ];
 
   home.packages = with pkgs; [
