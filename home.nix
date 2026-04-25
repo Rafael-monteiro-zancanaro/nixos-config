@@ -20,5 +20,9 @@
     vscodium
     nixfmt
     gcc
+    (texlive.combine {
+      inherit (texlive) scheme-medium;
+    })
+    texstudio
   ];
 }
