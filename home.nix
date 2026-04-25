@@ -22,8 +22,9 @@
     gcc
     (texlive.combine {
       inherit (texlive)
-        scheme-medium
+        scheme-full
         abntex2
+        enumitem
         ;
     })
     texstudio
