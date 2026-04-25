@@ -21,7 +21,10 @@
     nixfmt
     gcc
     (texlive.combine {
-      inherit (texlive) scheme-medium;
+      inherit (texlive)
+        scheme-medium
+        abntex2
+        ;
     })
     texstudio
   ];
