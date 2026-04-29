@@ -5,10 +5,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -47,43 +47,54 @@
     layout = "br";
     variant = "";
   };
-  
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # COSMIC configuration
   services.displayManager.cosmic-greeter.enable = true;
   services.desktopManager.cosmic.enable = true;
   services.system76-scheduler.enable = true;
   environment.sessionVariables.COSMIC_DATA_CONTROL_ENABLED = 1;
-  
+
   # Firefox Configuration (I never thought i shouldve add it)
   programs.firefox.enable = true;
   programs.firefox.preferences = {
-	"widget.gtk.libadwaita-colors.enabled" = false;
+    "widget.gtk.libadwaita-colors.enabled" = false;
   };
 
   # Configure console keymap
   console.keyMap = "br-abnt2";
 
+  # Configure WACOM
+  services.xserver.enable = true;
+
+  services.xserver.wacom.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.zancanaro = {
     isNormalUser = true;
     description = "Rafael Monteiro Zancanaro";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     packages = with pkgs; [
       git
     ];
   };
-  
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
- 
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     git
-   #  wget
+    #  wget
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

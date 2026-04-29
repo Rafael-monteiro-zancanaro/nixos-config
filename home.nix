@@ -20,13 +20,5 @@
     vscodium
     nixfmt
     gcc
-    (texlive.combine {
-      inherit (texlive)
-        scheme-full
-        abntex2
-        enumitem
-        ;
-    })
-    texstudio
   ];
 }
