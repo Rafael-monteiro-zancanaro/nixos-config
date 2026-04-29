@@ -72,6 +72,7 @@
   services.xserver.enable = true;
 
   services.xserver.wacom.enable = true;
+  hardware.opentabletdriver.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.zancanaro = {
