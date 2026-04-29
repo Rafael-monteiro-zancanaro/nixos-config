@@ -20,5 +20,6 @@
     vscodium
     nixfmt
     gcc
+    xournalpp
   ];
 }
