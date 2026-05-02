@@ -94,7 +94,7 @@
     git
     # GNOME Extensions
     gnomeExtensions.paperwm
-    gnomeExtensions.extension-manager
+    extension-manager
   ];
 
   system.stateVersion = "25.11";
