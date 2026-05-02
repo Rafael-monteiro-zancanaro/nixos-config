@@ -1,7 +1,7 @@
 { home, pkgs, ... }:
 
 {
-  home.shellAliases = {
+  programs.bash.shellAliases = {
     teste = "echo teste testando!!!";
   };
 }
