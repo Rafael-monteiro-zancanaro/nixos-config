@@ -9,7 +9,7 @@
     ./modules/misc.nix
     ./modules/social.nix
     ./modules/ide.nix
-    ./dotfile-configuration
+    ./dotfile-configuration.nix
   ];
 
   home.packages = with pkgs; [
