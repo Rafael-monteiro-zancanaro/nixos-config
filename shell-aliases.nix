@@ -1,7 +1,7 @@
 { home, pkgs, ... }:
 
 {
-  environment.shellAliases = {
+  home.shellAliases = {
     teste = "echo teste testando!!!";
   };
 }
