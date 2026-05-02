@@ -31,23 +31,17 @@
 
   console.keyMap = "br-abnt2";
 
+  # =========================
+  # Desktop Environment
+  # =========================
+  services.desktopManager.gnome.enable = true;
+  services.displayManager.gdm.enable = true;
   services.xserver = {
     enable = true;
-
     # Configure keymap in X11
     xkb = {
       layout = "br";
     };
-
-    # =========================
-    # Desktop Environment
-    # =========================
-
-    # GNOME (substitui COSMIC)
-    desktopManager.gnome.enable = true;
-
-    # Display manager do GNOME
-    displayManager.gdm.enable = true;
 
     # NÃO usar driver antigo da Wacom (evita conflito com libinput)
     wacom.enable = false;
