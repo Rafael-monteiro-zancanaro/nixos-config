@@ -2,6 +2,6 @@
 
 {
   environment.shellAliases = {
-    teste = "echo teste testando!!!"
-  }
+    teste = "echo teste testando!!!";
+  };
 }
