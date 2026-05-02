@@ -92,9 +92,12 @@
   environment.systemPackages = with pkgs; [
     vim
     git
+
     # GNOME Extensions
     gnomeExtensions.paperwm
-    extension-manager
+
+    # App pra gerenciar extensões
+    gnome-extension-manager
   ];
 
   system.stateVersion = "25.11";
