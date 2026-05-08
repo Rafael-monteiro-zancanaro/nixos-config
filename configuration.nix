@@ -92,6 +92,8 @@
 
     # App pra gerenciar extensões
     gnome-extension-manager
+
+    ghostty
   ];
 
   system.stateVersion = "25.11";
