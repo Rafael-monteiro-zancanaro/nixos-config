@@ -80,6 +80,13 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  xdg.terminal-exec = {
+    enable = true;
+    settings = {
+      default = [ "com.mitchellh.ghostty.desktop" ];
+    };
+  };
+
   # =========================
   # System Packages
   # =========================
@@ -94,6 +101,10 @@
     gnome-extension-manager
 
     ghostty
+  ];
+
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-console
   ];
 
   system.stateVersion = "25.11";
