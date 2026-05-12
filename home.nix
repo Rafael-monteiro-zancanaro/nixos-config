@@ -10,6 +10,7 @@
     ./modules/social.nix
     ./modules/ide.nix
     ./shell-aliases.nix
+    ./modules/lazyvim.nix
   ];
 
   home.packages = with pkgs; [
