@@ -23,5 +23,6 @@
     nixfmt
     gcc
     xournalpp
+    pcsx2
   ];
 }
