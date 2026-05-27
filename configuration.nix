@@ -30,6 +30,7 @@
   };
 
   console.keyMap = "br-abnt2";
+  services.tailscale.enable = true;
 
   # =========================
   # Desktop Environment
