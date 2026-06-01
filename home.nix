@@ -24,5 +24,6 @@
     gcc
     xournalpp
     pcsx2
+    ventoy-full
   ];
 }
