@@ -9,6 +9,8 @@
     ./modules/misc.nix
     ./modules/social.nix
     ./modules/ide.nix
+    ./modules/lazyvim.nix
+    ./shell-aliases.nix
   ];
 
   home.packages = with pkgs; [
@@ -21,5 +23,7 @@
     nixfmt
     gcc
     xournalpp
+    pcsx2
+    ventoy-full
   ];
 }
