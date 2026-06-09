@@ -11,6 +11,7 @@
     ./modules/ide.nix
     ./modules/lazyvim.nix
     ./shell-aliases.nix
+    ./modules/languages.nix
   ];
 
   home.packages = with pkgs; [
