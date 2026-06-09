@@ -1,6 +1,6 @@
 { home, pkgs, ... }: 
 
-let {
+let 
   rustdeps = with pkgs; [
     cargo 
     rustc
@@ -10,8 +10,7 @@ let {
     pkg-config 
     openssl
   ];
-} in {
-  home.packages = rustdeps;
-  # home.packages = with pkgs; rustdeps ++ [
-  # ];
+ in {
+  home.packages = with pkgs; rustdeps ++ [
+  ];
 }
