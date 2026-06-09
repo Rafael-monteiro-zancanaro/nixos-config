@@ -11,6 +11,7 @@ let {
     openssl
   ];
 } in {
-  home.packages = with pkgs; rustdeps ++ [
-  ];
+  home.packages = rustdeps;
+  # home.packages = with pkgs; rustdeps ++ [
+  # ];
 }
