@@ -12,5 +12,5 @@ let {
   ];
 } in {
   home.packages = with pkgs; rustdeps ++ [
-  ]
+  ];
 }
