@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.username = "zancanaro";
   home.homeDirectory = "/home/zancanaro";
-  home.stateVersion = "25.11";
+  home.stateVersion = "26.05";
 
   imports = [
     ./modules/misc.nix
