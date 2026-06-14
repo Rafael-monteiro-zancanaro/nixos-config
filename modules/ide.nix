@@ -1,5 +1,7 @@
 { pkgs, ... }:
 
+# IDE Packages - Relevant packages for code editing
+
 let
   aiFeatures = with pkgs; [
     codex

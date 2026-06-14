@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  # Miscellaneous packages
   home.packages = with pkgs; [
     spotify
     todoist-electron
