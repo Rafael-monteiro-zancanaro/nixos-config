@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   imports = [
@@ -102,17 +102,6 @@
     gnome-extension-manager
 
     ghostty
-    # LazyVim dependencies
-    neovim
-    curl
-    wget
-    unzip
-    gcc
-    ripgrep
-    fd
-    nodejs
-    lua-language-server
-    stylua
     nil
     nixd
   ];

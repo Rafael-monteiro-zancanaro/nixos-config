@@ -6,5 +6,6 @@
     obs-studio
     krita
     apostrophe
+    pcsx2
   ];
 }

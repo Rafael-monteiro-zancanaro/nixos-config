@@ -1,16 +1,17 @@
-{ home, pkgs, ... }: 
+{ pkgs, ... }:
 
-let 
+let
   rustdeps = with pkgs; [
-    cargo 
+    cargo
     rustc
     rustfmt
     clippy
     rust-analyzer
-    pkg-config 
+    pkg-config
     openssl
   ];
- in {
-  home.packages = with pkgs; rustdeps ++ [
+in
+{
+  home.packages = rustdeps ++ [
   ];
 }
