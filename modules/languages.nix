@@ -1,16 +1,20 @@
-{ home, pkgs, ... }: 
+{ pkgs, ... }:
 
-let 
+# Languages - Packages for programming languages
+# TODO: Maybe separate into specific language modules (i.e. rust.nix, python.nix, etc.)
+
+let
   rustdeps = with pkgs; [
-    cargo 
+    cargo
     rustc
     rustfmt
     clippy
     rust-analyzer
-    pkg-config 
+    pkg-config
     openssl
   ];
- in {
-  home.packages = with pkgs; rustdeps ++ [
+in
+{
+  home.packages = rustdeps ++ [
   ];
 }
