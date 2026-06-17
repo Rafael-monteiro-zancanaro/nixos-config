@@ -13,8 +13,16 @@ let
     pkg-config
     openssl
   ];
+  zigdeps = with pkgs; [
+    zig
+    zig-zlint
+    zigimports
+  ];
 in
 {
-  home.packages = rustdeps ++ [
-  ];
+  home.packages =
+    rustdeps
+    ++ zigdeps
+    ++ [
+    ];
 }
