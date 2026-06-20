@@ -20,5 +20,6 @@ in
     features
     ++ [
       zed-editor
+      devenv
     ];
 }
