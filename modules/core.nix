@@ -10,5 +10,6 @@
     fastfetch
     gcc
     xournalpp
+    btop
   ];
 }
