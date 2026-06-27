@@ -11,5 +11,6 @@
     gcc
     xournalpp
     btop
+    jq
   ];
 }

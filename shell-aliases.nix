@@ -17,5 +17,10 @@
     rebuild() {
       sudo nixos-rebuild switch --flake "$@"
     }
+    envfor() {
+      curl -s -X POST -G "https://devenv.new/api/generate" \
+        --data-urlencode "q=$1" \
+        | jq '.devenv_nix'
+    }
   '';
 }
