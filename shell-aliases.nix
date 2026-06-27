@@ -18,7 +18,6 @@
       sudo nixos-rebuild switch --flake "$@"
     }
     envfor() {
-      echo "Generating devenv for $*"
       curl -s -X POST -G "https://devenv.new/api/generate" \
         --data-urlencode "q=$*" \
         | jq -r '.devenv_nix'
