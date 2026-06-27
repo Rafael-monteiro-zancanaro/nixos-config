@@ -19,8 +19,8 @@
     }
     envfor() {
       curl -s -X POST -G "https://devenv.new/api/generate" \
-        --data-urlencode "q=$1" \
-        | jq '.devenv_nix'
+        --data-urlencode "q=$@" \
+        | jq -r '.devenv_nix'
     }
   '';
 }
