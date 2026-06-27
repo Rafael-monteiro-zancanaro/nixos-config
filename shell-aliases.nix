@@ -18,10 +18,28 @@
       sudo nixos-rebuild switch --flake "$@"
     }
     envfor() {
-      echo "Generating devenv for $*"
-      curl -s -X POST -G "https://devenv.new/api/generate" \
-        --data-urlencode "q=$*" \
-        | jq -r '.devenv_nix'
-    }
+       echo "Generating devenv for $*"
+
+       spin=('|' '/' '-' '\')
+       i=0
+
+       {
+         curl -s -X POST -G "https://devenv.new/api/generate" \
+           --data-urlencode "q=$*" \
+           > /tmp/devenv_response.tmp
+       } &
+
+       local pid=$!
+
+       while kill -0 $$pid 2>/dev/null; do
+         printf "\r[%s] Carregando..." "$${spin[$$i]}"
+         i=$$(( (i+1) % 4 ))
+         sleep 0.1
+       done
+
+       printf "\r\033[K"
+       jq -r '.devenv_nix' < /tmp/devenv_response.tmp
+       rm /tmp/devenv_response.tmp
+     }
   '';
 }
