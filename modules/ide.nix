@@ -20,6 +20,7 @@ in
     features
     ++ [
       zed-editor
+      jetbrains.idea
       devenv
     ];
 }
