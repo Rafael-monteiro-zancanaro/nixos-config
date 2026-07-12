@@ -21,6 +21,7 @@ in
     ++ [
       zed-editor
       jetbrains.idea
+      dbeaver-bin
       devenv
     ];
 }
