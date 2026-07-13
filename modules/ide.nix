@@ -12,7 +12,11 @@ let
     nixfmt
   ];
 
-  features = aiFeatures ++ ideFeatures;
+  dbFeatures = with pkgs; [
+    postgresql
+  ];
+
+  features = aiFeatures ++ ideFeatures ++ dbFeatures;
 in
 {
   home.packages =
