@@ -104,7 +104,13 @@
     ghostty
     nil
     nixd
+    postgresql
   ];
+
+  services.postgresql = {
+    enable = true;
+    package = pkgs.postgresql_17;
+  };
 
   environment.gnome.excludePackages = with pkgs; [
     gnome-console
