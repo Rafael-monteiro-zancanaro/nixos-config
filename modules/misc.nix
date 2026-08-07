@@ -8,5 +8,7 @@
     krita
     apostrophe
     pcsx2
+    melonds
+    mgba
   ];
 }
