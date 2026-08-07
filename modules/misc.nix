@@ -8,7 +8,8 @@
     krita
     apostrophe
     pcsx2
-    melonDS
+    gtk3
+    melonds
     mgba
   ];
 }
