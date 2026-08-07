@@ -8,8 +8,7 @@
     krita
     apostrophe
     pcsx2
-    gtk3
-    melonds
+    desmume
     mgba
   ];
 }
