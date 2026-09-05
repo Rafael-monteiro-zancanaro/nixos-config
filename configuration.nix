@@ -10,6 +10,11 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  nix.settings.trusted-users = [
+    "root"
+    "zancanaro"
+  ];
+
   networking.hostName = "nixos"; # Define your hostname.
   networking.networkmanager.enable = true;
 
