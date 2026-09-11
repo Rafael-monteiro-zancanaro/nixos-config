@@ -121,5 +121,7 @@
     gnome-console
   ];
 
+  security.pki.certificateFiles = [ /etc/nixos/caddy-root.crt ];
+
   system.stateVersion = "26.05";
 }
