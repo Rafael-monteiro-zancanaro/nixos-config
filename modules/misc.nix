@@ -10,5 +10,6 @@
     pcsx2
     desmume
     mgba
+    appimage-run
   ];
 }
