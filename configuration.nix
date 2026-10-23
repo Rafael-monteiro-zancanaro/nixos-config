@@ -35,7 +35,7 @@
   };
 
   console.keyMap = "br-abnt2";
-  services.tailscale.enable = true;
+  virtualisation.docker.enable = true;
 
   # =========================
   # Desktop Environment
