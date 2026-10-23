@@ -121,7 +121,5 @@
     gnome-console
   ];
 
-  security.pki.certificateFiles = [ ./caddy-root.crt ];
-
   system.stateVersion = "26.05";
 }
