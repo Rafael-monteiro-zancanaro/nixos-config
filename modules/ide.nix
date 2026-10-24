@@ -5,18 +5,13 @@
 let
   aiFeatures = with pkgs; [
     codex
-    codex-acp
   ];
 
   ideFeatures = with pkgs; [
     nixfmt
   ];
 
-  dbFeatures = with pkgs; [
-    postgresql
-  ];
-
-  features = aiFeatures ++ ideFeatures ++ dbFeatures;
+  features = aiFeatures ++ ideFeatures;
 in
 {
   home.packages =
