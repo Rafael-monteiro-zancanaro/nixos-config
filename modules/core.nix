@@ -12,5 +12,6 @@
     xournalpp
     btop
     jq
+    firefox-devedition
   ];
 }
