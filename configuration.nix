@@ -36,6 +36,7 @@
 
   console.keyMap = "br-abnt2";
   virtualisation.docker.enable = true;
+  programs.nix-ld.enable = true;
 
   # =========================
   # Desktop Environment
