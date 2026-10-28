@@ -22,5 +22,6 @@ in
       jetbrains.idea
       dbeaver-bin
       devenv
+      arduino-ide
     ];
 }
